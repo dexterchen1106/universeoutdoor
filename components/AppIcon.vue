@@ -21,6 +21,7 @@ const icon = computed(() => icons[props.name]);
     :is="icon"
     :size="size"
     :color="color"
-    :stroke-width="strokeWidth" :default-class="defaultClass"
+    :stroke-width="strokeWidth"
+    :default-class="defaultClass"
   />
 </template>
