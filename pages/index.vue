@@ -23,10 +23,10 @@
 
     <!-- Arrows -->
     <div class="absolute inset-y-0 left-4 z-30 flex items-center cursor-pointer" @click="prevImage">
-      <AppIcon name="MoveLeft" :strokeWidth="'3px'" class="text-white text-4xl" />
+      <AppIcon name="MoveLeft" strokeWidth="3px" class="text-white text-4xl" />
     </div>
     <div class="absolute inset-y-0 right-4 z-30 flex items-center cursor-pointer" @click="nextImage">
-      <AppIcon name="MoveRight" :strokeWidth="'3px'" class="text-white text-4xl" />
+      <AppIcon name="MoveRight" strokeWidth="3px" class="text-white text-4xl" />
     </div>
   </section>
 </template>

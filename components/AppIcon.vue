@@ -1,27 +1,10 @@
+<template>
+  <component :is="icon" v-bind="$attrs" />
+</template>
 <script setup>
-// import { computed } from 'vue';
 import * as icons from "lucide-vue-next";
-
-const props = defineProps({
-  name: {
-    type: String,
-    required: true
-  },
-  size: Number,
-  color: String,
-  strokeWidth: Number,
-  defaultClass: String
-})
-
-const icon = computed(() => icons[props.name]);
+const attrs = useAttrs()
+const props = defineProps()
+const icon = computed(() => icons[attrs.name]);
 </script>
 
-<template>
-  <component
-    :is="icon"
-    :size="size"
-    :color="color"
-    :stroke-width="strokeWidth"
-    :default-class="defaultClass"
-  />
-</template>

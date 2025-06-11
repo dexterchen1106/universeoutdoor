@@ -1,6 +1,7 @@
 <template>
   <div>
     Single Article 1234
+
     <!-- <NuxtRouteAnnouncer />
     <NuxtWelcome /> -->
 
