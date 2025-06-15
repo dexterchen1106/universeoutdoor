@@ -1,13 +1,7 @@
 <template>
-  <div>
-    Single Article 1234
-
-    <!-- <NuxtRouteAnnouncer />
-    <NuxtWelcome /> -->
-
-    <!-- <NuxtPage /> -->
-  </div>
+  <h1>{{ `blog-${params.id}` }}</h1>
 </template>
-
-
-
+<script setup>
+const { params } = useRoute()
+console.log(params)
+</script>
