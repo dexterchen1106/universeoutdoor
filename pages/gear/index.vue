@@ -60,19 +60,27 @@
 </template>
 <script setup>
 import CardView from './components/ListView.vue'
-import { useSearchArticles } from '@/api/articles/index'
+import { useSearchGears } from '@/api/gears/index'
+// import { Card, CardContent } from '@/components/ui/card';
+// import { Button } from '@/components/ui/button';
+// import { Input } from '@/components/ui/input';
 
 const categories = ['Web', 'Office', 'News', 'Awards'];
 
-// const recent = [
-//   { id: 1, title: 'Post with Sidebar', avatar: '/images/avatar1.jpg' },
-//   { id: 2, title: 'Post with Video', avatar: '/images/avatar2.jpg' },
-//   { id: 3, title: 'Post with Audio', avatar: '/images/avatar3.jpg' },
-//   { id: 4, title: 'Post with Gallery', avatar: '/images/avatar4.jpg' },
-// ];
+const recent = [
+  { id: 1, title: 'Post with Sidebar', avatar: '/images/avatar1.jpg' },
+  { id: 2, title: 'Post with Video', avatar: '/images/avatar2.jpg' },
+  { id: 3, title: 'Post with Audio', avatar: '/images/avatar3.jpg' },
+  { id: 4, title: 'Post with Gallery', avatar: '/images/avatar4.jpg' },
+];
 
-const { data: list, status, error, refresh, clear } = await useSearchArticles()
+const SYSTEMS = ['sleep', 'pack', 'electronic', 'camera', 'cook']
 
-console.log(`list`, list.value)
 
+const { data: list, status, error, refresh, clear } = await useSearchGears()
+// console.log(data.value)
+
+// onMounted(()=>{
+//   useSearchArticles()
+// })
 </script>

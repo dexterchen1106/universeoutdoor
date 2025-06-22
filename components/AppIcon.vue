@@ -7,4 +7,3 @@ const attrs = useAttrs()
 const props = defineProps()
 const icon = computed(() => icons[attrs.name]);
 </script>
-

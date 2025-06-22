@@ -1,3 +1,8 @@
 {
-  "universeoutdoord": "宇宙凹豆"
+  "universeoutdoord": "宇宙凹豆",
+  "weight": "重量",
+  "packed": "打包尺寸",
+  "expanded": "展開尺寸",
+  "size": "尺寸",
+  "usecase": "使用情境"
 }

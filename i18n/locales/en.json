@@ -1,4 +1,9 @@
 {
   "universeoutdoord": "Universe OutdoorD",
-  "diving": "diving"
+  "diving": "diving",
+  "weight": "weight",
+  "packed": "packed",
+  "expanded": "expanded",
+  "size": "size",
+  "usecase": "usecase"
 }
