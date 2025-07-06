@@ -1,5 +1,25 @@
 {
-  "i18n-ally.localesPaths": ["i18n", "i18n/locales"],
-  "editor.formatOnSave": true,
-  "i18n-ally.keystyle": "nested"
+  "prettier.enable": true,
+  "editor.formatOnSave": true, // 在保存文件時自動格式化
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.trailingComma": "all",
+  "prettier.bracketSameLine": true,
+  "prettier.htmlWhitespaceSensitivity": "ignore",
+  "prettier.printWidth": 100,
+
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "tsconfig.json": "tsconfig.*.json, env.d.ts",
+    "vite.config.*": "jsconfig*, vitest.config.*, cypress.config.*, playwright.config.*",
+    "package.json": "package-lock.json, pnpm*, .yarnrc*, yarn*, .eslint*, eslint*, .oxlint*, oxlint*, .prettier*, prettier*, .editorconfig"
+  },
+  "i18n-ally.localesPaths": ["i18n", "i18n/locales"]
 }
